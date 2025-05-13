@@ -10,6 +10,7 @@ import { useState } from "react"
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [formSuccess, setFormSuccess] = useState(false)
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -405,49 +406,62 @@ export default function Home() {
                 </div>
               </div>
               <div className="rounded-lg border bg-background p-6 shadow-sm">
-                <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label
-                        htmlFor="first-name"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
-                        First name
-                      </label>
-                      <Input id="first-name" placeholder="John" />
+                {formSuccess ? (
+                  <div className="text-green-600 text-center font-semibold py-8">
+                    Thank you! Your message has been sent.
+                  </div>
+                ) : (
+                  <form
+                    className="space-y-4"
+                    action="https://api.web3forms.com/submit"
+                    method="POST"
+                    onSubmit={() => setTimeout(() => setFormSuccess(true), 100)}
+                  >
+                    <input type="hidden" name="access_key" value="c267b696-2d11-42de-9e07-a1521263edd4" />
+                    <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+                    <div className="grid grid-cols-2 gap-4">
+                      <div className="space-y-2">
+                        <label
+                          htmlFor="first-name"
+                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        >
+                          First name
+                        </label>
+                        <Input id="first-name" placeholder="John" />
+                      </div>
+                      <div className="space-y-2">
+                        <label
+                          htmlFor="last-name"
+                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                        >
+                          Last name
+                        </label>
+                        <Input id="last-name" placeholder="Doe" />
+                      </div>
                     </div>
                     <div className="space-y-2">
                       <label
-                        htmlFor="last-name"
+                        htmlFor="email"
                         className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       >
-                        Last name
+                        Email
                       </label>
-                      <Input id="last-name" placeholder="Doe" />
+                      <Input id="email" placeholder="john.doe@example.com" type="email" />
                     </div>
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Email
-                    </label>
-                    <Input id="email" placeholder="john.doe@example.com" type="email" />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Message
-                    </label>
-                    <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
-                  </div>
-                  <Button type="submit" className="w-full">
-                    Send Message
-                  </Button>
-                </form>
+                    <div className="space-y-2">
+                      <label
+                        htmlFor="message"
+                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        Message
+                      </label>
+                      <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
+                    </div>
+                    <Button type="submit" className="w-full">
+                      Send Message
+                    </Button>
+                  </form>
+                )}
               </div>
             </div>
           </div>
