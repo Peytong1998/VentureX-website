@@ -32,6 +32,9 @@ export default function Home() {
             <Link href="#contact" className="text-sm font-medium hover:text-primary">
               Contact
             </Link>
+            <Link href="#pricing" className="text-sm font-medium hover:text-primary">
+              Pricing
+            </Link>
           </nav>
           <Button asChild className="hidden md:inline-flex">
             <Link href="#contact">Get Started</Link>
@@ -69,6 +72,9 @@ export default function Home() {
               </Link>
               <Link href="#contact" className="text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
                 Contact
+              </Link>
+              <Link href="#pricing" className="text-base font-medium" onClick={() => setMobileMenuOpen(false)}>
+                Pricing
               </Link>
               <Button asChild className="w-full mt-2" onClick={() => setMobileMenuOpen(false)}>
                 <Link href="#contact">Get Started</Link>
