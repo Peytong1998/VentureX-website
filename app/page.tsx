@@ -346,6 +346,61 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Pricing Section */}
+        <section id="pricing" className="bg-background py-20">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
+              <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium mb-2">
+                Pricing
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Packages</h2>
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                Transparent pricing for every stage of your business.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-3 mb-12">
+              {/* Basic One-Pager */}
+              <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
+                <h3 className="text-xl font-bold mb-2">Basic One-Pager</h3>
+                <div className="text-3xl font-extrabold text-primary mb-2">$600</div>
+                <p className="text-muted-foreground mb-4">Ideal for simple websites or landing pages.</p>
+              </div>
+              {/* Multi-Page Layout */}
+              <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
+                <h3 className="text-xl font-bold mb-2">Multi-Page Layout</h3>
+                <div className="text-3xl font-extrabold text-primary mb-2">$1,350</div>
+                <p className="text-muted-foreground mb-4">Great for small businesses or service providers.<br/>(3–5 pages)</p>
+              </div>
+              {/* Full Custom */}
+              <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
+                <h3 className="text-xl font-bold mb-2">Full Custom</h3>
+                <div className="text-3xl font-extrabold text-primary mb-2">Starting at $3,000</div>
+                <p className="text-muted-foreground mb-4">Includes advanced features like integrations and custom functionality.</p>
+              </div>
+            </div>
+            <div className="flex flex-col items-center">
+              <h4 className="text-2xl font-bold mb-4">Add-Ons</h4>
+              <div className="grid gap-6 md:grid-cols-3 w-full max-w-4xl">
+                <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
+                  <div className="text-lg font-semibold mb-1">Hosting</div>
+                  <div className="text-xl font-bold text-primary mb-1">$35<span className="text-base font-normal">/month</span></div>
+                  <p className="text-muted-foreground text-center">Recommended</p>
+                </div>
+                <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
+                  <div className="text-lg font-semibold mb-1">Site Management</div>
+                  <div className="text-xl font-bold text-primary mb-1">$50<span className="text-base font-normal">/month</span></div>
+                  <p className="text-muted-foreground text-center">2–3 updates/month</p>
+                </div>
+                <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
+                  <div className="text-lg font-semibold mb-1">Site Management</div>
+                  <div className="text-xl font-bold text-primary mb-1">$140<span className="text-base font-normal">/month</span></div>
+                  <p className="text-muted-foreground text-center">5–6 updates/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="bg-muted py-20">
           <div className="container px-4 md:px-6">
@@ -357,7 +412,7 @@ export default function Home() {
                   </div>
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Let's Work Together</h2>
                   <p className="text-muted-foreground md:text-xl">
-                    Ready to start your next project? Contact us today for a free consultation.
+                    Let's bring your next idea to life. Shoot us a message—we'd love to hear from you.
                   </p>
                 </div>
                 <div className="space-y-4">
