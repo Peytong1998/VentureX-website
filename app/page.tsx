@@ -427,7 +427,7 @@ export default function Home() {
                         >
                           First name
                         </label>
-                        <Input id="first-name" placeholder="John" />
+                        <Input id="first-name" name="first_name" placeholder="John" />
                       </div>
                       <div className="space-y-2">
                         <label
@@ -436,7 +436,7 @@ export default function Home() {
                         >
                           Last name
                         </label>
-                        <Input id="last-name" placeholder="Doe" />
+                        <Input id="last-name" name="last_name" placeholder="Doe" />
                       </div>
                     </div>
                     <div className="space-y-2">
@@ -446,7 +446,7 @@ export default function Home() {
                       >
                         Email
                       </label>
-                      <Input id="email" placeholder="john.doe@example.com" type="email" />
+                      <Input id="email" name="email" placeholder="john.doe@example.com" type="email" />
                     </div>
                     <div className="space-y-2">
                       <label
@@ -455,7 +455,7 @@ export default function Home() {
                       >
                         Message
                       </label>
-                      <Textarea id="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
+                      <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
                     </div>
                     <Button type="submit" className="w-full">
                       Send Message

@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Venture X | Modern Website Development",
   description: "Venture X is a modern website development company specializing in creating exceptional digital experiences.",
   generator: "v0.dev",
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: "Venture X | Modern Website Development",
     description: "Venture X is a modern website development company specializing in creating exceptional digital experiences.",
