@@ -476,38 +476,26 @@ export default function Home() {
                     <input type="checkbox" name="botcheck" className="hidden" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label
-                          htmlFor="first-name"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
+                        <label htmlFor="first-name" className="text-sm font-medium leading-none">
                           First name
                         </label>
                         <Input id="first-name" name="first_name" placeholder="John" />
                       </div>
                       <div className="space-y-2">
-                        <label
-                          htmlFor="last-name"
-                          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                        >
+                        <label htmlFor="last-name" className="text-sm font-medium leading-none">
                           Last name
                         </label>
                         <Input id="last-name" name="last_name" placeholder="Doe" />
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <label
-                        htmlFor="email"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
+                      <label htmlFor="email" className="text-sm font-medium leading-none">
                         Email
                       </label>
                       <Input id="email" name="email" placeholder="john.doe@example.com" type="email" />
                     </div>
                     <div className="space-y-2">
-                      <label
-                        htmlFor="message"
-                        className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                      >
+                      <label htmlFor="message" className="text-sm font-medium leading-none">
                         Message
                       </label>
                       <Textarea id="message" name="message" placeholder="Tell us about your project..." className="min-h-[120px]" />
