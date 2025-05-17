@@ -359,29 +359,35 @@ export default function Home() {
               <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium mb-2">
                 Pricing
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Packages</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Website Packages</h2>
               <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                Transparent pricing for every stage of your business.
+                Transparent pricing for every stage of your business
               </p>
             </div>
-            <div className="grid gap-8 md:grid-cols-3 mb-12">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-12">
+              {/* Landing Page */}
+              <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
+                <h3 className="text-xl font-bold mb-2">Landing Page</h3>
+                <div className="text-3xl font-extrabold text-primary mb-2">$350</div>
+                <p className="text-muted-foreground mb-4 text-center">Perfect for ad campaigns, launches, or lead capture. Includes a custom single-section page, mobile responsive, and optional contact or signup form.</p>
+              </div>
               {/* Basic One-Pager */}
               <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
                 <h3 className="text-xl font-bold mb-2">Basic One-Pager</h3>
                 <div className="text-3xl font-extrabold text-primary mb-2">$600</div>
-                <p className="text-muted-foreground mb-4">Ideal for simple websites or landing pages.</p>
+                <p className="text-muted-foreground mb-4 text-center">Great for personal brands, portfolios, or simple business sites. Includes a custom scrolling layout, form, and basic site structure.</p>
               </div>
               {/* Multi-Page Layout */}
               <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
                 <h3 className="text-xl font-bold mb-2">Multi-Page Layout</h3>
                 <div className="text-3xl font-extrabold text-primary mb-2">$1,350</div>
-                <p className="text-muted-foreground mb-4">Great for small businesses or service providers.<br/>(3–5 pages)</p>
+                <p className="text-muted-foreground mb-4 text-center">Ideal for small businesses needing a full online presence. Includes 3–5 custom pages like Home, About, Services, Contact, etc.</p>
               </div>
               {/* Full Custom */}
               <div className="flex flex-col rounded-lg border bg-background p-8 shadow-sm items-center">
                 <h3 className="text-xl font-bold mb-2">Full Custom</h3>
-                <div className="text-3xl font-extrabold text-primary mb-2">Starting at $3,000</div>
-                <p className="text-muted-foreground mb-4">Includes advanced features like integrations and custom functionality.</p>
+                <div className="text-3xl font-extrabold text-primary mb-2">Starts at $3,000</div>
+                <p className="text-muted-foreground mb-4 text-center">For advanced sites with integrations, booking systems, or full redesigns.</p>
               </div>
             </div>
             <div className="flex flex-col items-center">
@@ -390,17 +396,17 @@ export default function Home() {
                 <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
                   <div className="text-lg font-semibold mb-1">Hosting</div>
                   <div className="text-xl font-bold text-primary mb-1">$35<span className="text-base font-normal">/month</span></div>
-                  <p className="text-muted-foreground text-center">Recommended</p>
+                  <p className="text-muted-foreground text-center">Reliable hosting with SSL, domain connection, and backend support.</p>
                 </div>
                 <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
                   <div className="text-lg font-semibold mb-1">Site Management</div>
                   <div className="text-xl font-bold text-primary mb-1">$50<span className="text-base font-normal">/month</span></div>
-                  <p className="text-muted-foreground text-center">2–3 updates/month</p>
+                  <p className="text-muted-foreground text-center">2–3 content updates per month (text, image, links).</p>
                 </div>
                 <div className="rounded-lg border bg-muted/50 p-6 flex flex-col items-center">
                   <div className="text-lg font-semibold mb-1">Site Management</div>
                   <div className="text-xl font-bold text-primary mb-1">$140<span className="text-base font-normal">/month</span></div>
-                  <p className="text-muted-foreground text-center">5–6 updates/month</p>
+                  <p className="text-muted-foreground text-center">Up to 6 changes/month, layout tweaks, and proactive support.</p>
                 </div>
               </div>
             </div>
